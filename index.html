@@ -11,17 +11,28 @@
       padding: 0 20px;
       color: #111111;
       line-height: 1.6;
-      background: linear-gradient(to bottom, #C7D2D0 0%, #FFFFFF 60%);
+
+      /* Radial gradient centered behind the image */
+      background: radial-gradient(
+        circle at center top,
+        #BFCAC8 0%,     /* exact sampled color */
+        #BFCAC8 30%,    /* hold the deeper tone */
+        #D7DFDE 80%,    /* soften outward */
+        #D7DFDE 100%    /* final fade */
+      );
     }
+
     h1, h2 {
       font-family: "Playfair Display", serif;
       font-weight: 600;
     }
+
     .header-image {
       width: 100%;
       border-radius: 4px;
       margin-bottom: 30px;
     }
+
     .download {
       margin: 20px 0;
       padding: 15px;
@@ -29,6 +40,7 @@
       border-radius: 6px;
       background-color: #FFFFFF;
     }
+
     a {
       color: #6A7A8C;
       text-decoration: none;
